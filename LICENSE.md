@@ -1,4 +1,14 @@
-﻿matRad 
+matRad_MKM-extension
+
+This code is totally based on matRad software.
+So it follows the General Public License Version 3 (GPLv3), same as matRad.
+Until now, in this extension code, original code modification is not related to Ipopt / MCsquare / ompMC. 
+
+Contact: xmfla0803@gmail.com
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+matRad 
 with Ipopt MCsquare ompMC
 
 This matRad as a compilation with Ipopt, MCsquare and ompMC as separate and independent works (or 
