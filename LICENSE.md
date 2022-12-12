@@ -1,8 +1,17 @@
 matRad_MKM-extension
 
-This code is totally based on matRad software.
-So it follows the General Public License Version 3 (GPLv3), same as matRad.
-Until now, in this extension code, original code modification is not related to Ipopt / MCsquare / ompMC. 
+This code is totally based on matRad software and modified for specific objective.
+First modification was conducted in March, 2021.
+So it is under the General Public License Version 3 (GPLv3), same as matRad.
+Until now, in this extension code, original code modification is not related to Ipopt / MCsquare / ompMC.
+
+The extension was developed by Euntaek Yoon and will be further optimized. 
+
+The copy of the GNU General Public License is attached below.
+Additional permission under GNU GPL version 3 section 7
+
+You can use this extension by just adding or replacing the files in matRad.
+
 
 Contact: xmfla0803@gmail.com
 
