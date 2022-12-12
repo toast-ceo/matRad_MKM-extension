@@ -8,6 +8,7 @@ The redistribution strategy is affected by the GPLv3 license. Please check the L
 
 You can use this extension by just replacing or adding the file into the matRad toolkit,
 then it can be tested by the MKMtest script file.
+For optimizing fluence based on MKM, sequential process is depicted with short description.
 
 The improvement of code performance will also proceed.
 The present extension is rather slower than the original matRad biological dose calculation algorithm.
