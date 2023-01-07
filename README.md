@@ -6,8 +6,11 @@ This extension enables the microdosimetric kinetic model (MKM) based biological 
 ANYONE can use this extension with no permission.
 The redistribution strategy is affected by the GPLv3 license. Please check the License.md file.
 
-You can use this extension by just replacing or adding the file into the matRad toolkit,
-then it can be tested by the MKMtest script file.
+You can use this extension by just copying the whole file and pasting at the matRad main directory.
+If you pasting at the correct directory, there will be warning sign of override,
+but you can ignore this sign because we did not changed original matRad's script file.
+
+You can test the extension by using MKMtest script file.
 For optimizing fluence based on MKM, a sequential process is depicted with a short description.
 
 --------------------------------------------------------------------------------------------------------------------------------------------
