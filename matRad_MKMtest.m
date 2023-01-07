@@ -3,6 +3,8 @@ matRad_rc; %If this throws an error, run it from the parent directory first to s
 
 %% Patient Data Import
 % load('Your_patientimg.mat');
+% We attatched water phantom (3x3x3 cm3) for the test calculation
+load('WP333.mat');
 
 %% Change cst file for MKM
 cst{1, 5}.alphaX  = 0.764
