@@ -1,0 +1,49 @@
+##################################
+# This example is just basic code structure
+# for the specific energy scoring
+##################################
+
+########Water Phantom###############
+
+s:Ge/WaterBox/Type  = "TsBox"
+s:Ge/WaterBox/Parent  = "World"
+s:Ge/WaterBox/Material  = "G4_WATER"
+d:Ge/WaterBox/HLX   = 24.0 cm
+d:Ge/WaterBox/HLY   = 24.0 cm
+d:Ge/WaterBox/HLZ   = 24.0 cm
+d:Ge/WaterBox/transX   = 24.0 cm
+d:Ge/WaterBox/transY   = 1.5 mm
+d:Ge/WaterBox/transZ   = 1.5 mm
+d:Ge/WaterBox/RotX   = 0.0 deg
+d:Ge/WaterBox/RotY   = 0.0 deg
+d:Ge/WaterBox/RotZ   = 0.0 deg
+
+
+######Score geometry##################
+s:Sc/DoseOnCTGrid/Quantity                  = "DoseToMedium"
+s:Sc/DoseOnCTGrid/Component                 = "WaterBox"
+b:Sc/DoseOnCTGrid/OutputToConsole           = "True"
+s:Sc/DoseOnCTGrid/IfOutputFileAlreadyExists = "Increment"
+s:Sc/DoseOnCTGrid/OutputType                = "csv"
+b:Sc/DoseOnCTGrid/DICOMOutput32BitsPerPixel = "True"
+sv:Sc/DoseOnCTGrid/Report  = 2 "Mean" "Standard_Deviation"
+i:Sc/DoseOnCTGrid/ZBins = 160
+i:Sc/DoseOnCTGrid/YBins = 160
+i:Sc/DoseOnCTGrid/XBins = 160
+
+
+####Scoring command#################################
+s:Sc/mMKM_inani/Quantity                   = "RBE_TabulatedAlphaBeta"
+s:Sc/mMKM_inani/Component                  = "WaterBox"
+s:Sc/mMKM_inani/OutputQuantity             = "alpha"
+d:Sc/mMKM_inani/PrescribedDose             = 1 Gy
+sv:Sc/mMKM_inani/CellLines                 = 1 "CellLineV79"
+b:Sc/mMKM_inani/SimultaneousExposure       = "False"
+s:Sc/mMKM_inani/OutputType                 = "csv"
+s:Sc/mMKM_inani/OutputFile                 = "mMKM_WP"
+#b:Sc/mMKM_inani/OutputAfterRun             = "True"
+s:Sc/mMKM_inani/IfOutputFileAlreadyExists  = "Increment"
+s:Sc/mMKM_inani/ReferencedSubScorer_Dose   = "DoseOnCTGrid"
+s:Sc/mMKM_inani/ModelName                  = "mMKM_inani"
+sv:Sc/mMKM_inani/Report = 2 "Mean" "Standard_Deviation"
+########################################################
