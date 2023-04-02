@@ -13,6 +13,8 @@ but you can ignore this sign because we did not changed original matRad's script
 You can test the extension by using MKMtest script file.
 For optimizing fluence based on MKM, a sequential process is depicted with a short description.
 
+Extension can serve as a resource for educational purposes, allowing researchers to conduct preliminary studies on carbon ion therapy without relying on a commercial TPS system. Furthermore, anyone with beam-line models can apply one's own models to the results.
+
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 This MKM extension is need to be optimized because it takes more memory and time for dose calculation and optimization than the default LEM model.
@@ -34,3 +36,7 @@ In short, although there may be differences depending on the individual PC speci
 We are trying to resolve the memory consumption problem because when we handle a large target, the extension cannot be used with a PC.
 
 --------------------------------------------------------------------------------------------------------------------------------------------
+
+We also uploaded TOPAS extensions for MC recalculation of MKM extension.
+
+Since specific energy distribution can be achieved through this extension, the RBE (MKM) weighted dose calculation requires a post-process with reference to related papers.
