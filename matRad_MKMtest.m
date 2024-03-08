@@ -49,5 +49,5 @@ dij = matRad_calcParticleDose(ct,stf,pln,cst);
 %% Fluence optimization
 resultGUI = matRad_fluenceOptimization(dij,cst,pln);
 
-%% Check
+%% Check s
 matRadGUI
