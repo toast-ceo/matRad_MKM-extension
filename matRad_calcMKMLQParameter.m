@@ -8,7 +8,7 @@ function [vAlphaDose, vBetaDose, vZ] = matRad_calcMKMLQParameter(vRadDepths,mTis
 %   vRadDepths:     radiological depths of voxels
 %   mTissueClass:   tissue classes of voxels
 %   baseData:       biological base data
-%
+%carbon_DG
 % output
 %   vAlpha:         alpha values for voxels interpolated from base data
 %   vBeta:          beta values for voxels interpolated from base data
